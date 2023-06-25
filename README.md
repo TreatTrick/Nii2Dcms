@@ -22,3 +22,8 @@ to convert the .nii files in the `/your/input/directory` to .dcm files and save 
 1. `config.yaml` contains the tag configuration of the generated DICOM files, which can be modified. For example, if you modify `PatientName: 'xyz'`, the patient name in the generated DICOM file will be `xyz`.
 2. By default, all the .nii files under the `input` folder will be read and the generated DICOM files will be automatically saved to the directory corresponding to the .nii file name under the `output` folder.
 For example, if there is a file `12345.nii` in the `input` folder, the directory 12345 will be generated in the `output` folder, and the .dcm files converted from `12345.nii` will be saved in the directory
+3. you can also downlowd the .exe file by click [release](https://github.com/TreatTrick/Nii2Dcms/releases) to use it. you can either double click the `Nii2Dcms.exe` to read .nii files in default `input` directory, and the results of .dcm files will be saved in `output` directory. Or you can run
+```
+Nii2Dcms.exe --input=D:\\your\\input\\directory --output=D:\\your\\output\\directory
+```
+to specify the input and output directories for converting. Your input directory should contains .nii files.
