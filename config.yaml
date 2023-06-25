@@ -1,0 +1,17 @@
+SamplesPerPixel: 1
+is_little_endian: True
+is_implicit_VR: True
+PatientName: ''
+PatientBirthDate: ''
+SOPClassUID: '1.2.840.10008.5.1.4.1.1.2'  # SOPClassUID for CT Image Storage
+ImageType: 'ORIGINAL\PRIMARY\AXIAL'  # Standard ImageType for a primary, original, axial image. This may vary based on your specific use case
+StationName: ''  # Replace with actual station's name
+PatientPosition: 'HFS'  # Head First-Supine, change this according to the patient's position
+Modality: 'CT'
+PhotometricInterpretation: 'MONOCHROME2'  # Typical for CT images, but this can change based on your specific image data
+ManufacturerModelName: 'YourModelName'  # Replace with the actual manufacturer's model name
+InstitutionName: 'YOFO'
+Manufacturer: 'YOFO'  # Replace with actual manufacturer's name
+KVP: 0  # Replace with actual KVP value. This may need to be calculated or obtained from the scanner
+XRayTubeCurrent: 0  
+
