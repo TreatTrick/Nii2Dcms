@@ -1,0 +1,5 @@
+yaml==6.0
+numpy==1.24.2
+SimpleITK==2.2.1
+pydicom==2.4.0
+argparse==1.1
