@@ -33,7 +33,6 @@ class Nii2Dcm:
 
     def process_nii_data(self, bias=2240):
         self.nii_data = sitk.GetArrayFromImage(self.nii_img)
-        self.nii_data += np.abs(np.min(self.nii_data))
         self.nii_data = self.nii_data.astype(np.uint16)
         self.window_center = np.mean(self.nii_data)
         self.window_width = (np.percentile(self.nii_data,95) - np.percentile(self.nii_data,5)) * 2
